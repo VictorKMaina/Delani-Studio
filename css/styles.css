@@ -14,12 +14,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 100vh;
 }
 
 #service {
   background-image: url("../assets/backgrounds/s_image.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 .container-fluid .jumbotron {
@@ -27,12 +28,16 @@ body {
   height: 650px;
   margin-top: 200px;
 }
-.jumbotron h1 {
+.jumbotron h1, .jumbotron p {
   line-height: 70px;
+  font-weight: bold;
 }
 
 [alt="mouse click"]{
   position: absolute;
   bottom: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+.portfolio-img {
+  width: 100%;
 }

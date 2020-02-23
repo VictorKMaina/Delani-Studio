@@ -11,4 +11,7 @@ $().ready(function () {
     $("#product-1").toggle();
     $("#product-2").toggle();
   });
+  $(".col-lg-3").mouseenter(function () {
+    $(".col-lg-3 img").css("")
+  })
 })

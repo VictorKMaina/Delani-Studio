@@ -24,6 +24,10 @@ body {
   background-size: cover;
 }
 
+/* #service div {
+  padding: 3rem;
+} */
+
 #contact {
   background-image: url(../assets/backgrounds/c_image.jpg);
   background-repeat: no-repeat;
@@ -36,28 +40,98 @@ body {
   height: 650px;
   margin-top: 200px;
 }
-.jumbotron h1, .jumbotron p {
+
+.jumbotron h1,
+.jumbotron p {
   line-height: 70px;
   font-weight: bold;
 }
 
-[alt="mouse click"]{
+[alt="mouse click"] {
   position: absolute;
   bottom: 0px;
   margin-bottom: 10px;
 }
+
 .portfolio-img {
   width: 100%;
 }
+
+.form-row{
+  width: 75%;
+}
+
 h3 {
   font-weight: bold;
 }
-input, textarea {
+
+input,
+textarea {
   width: 100%;
   background-color: #00000000;
   border: white solid 1px;
   color: white;
 }
-input::placeholder, textarea::placeholder {
+
+input::placeholder,
+textarea::placeholder {
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .col-md-3 {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  div.mb-5 {
+    margin: 0;
+  }
+
+  .container-fluid .jumbotron {
+    margin-top: 0;
+    padding-top: 70px;
+  }
+
+  [alt="mouse click"] {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 60px;
+  }
+  [alt="logo"]{
+    margin-bottom: 30px;
+  }
+  .jumbotron h1 {
+    font-size: 2.3em;
+    line-height: 50px;
+    font-weight: bold;
+  }
+  .jumbotron p {
+    font-size: 1em;
+    line-height: 25px;
+    font-weight: normal;
+    margin-top: 40px;
+    text-align: center;
+  }
+  #about, #service, #service div {
+    margin: auto;
+    padding: 0;
+  }
+  #about p, #service p {
+    text-align: start;
+  }
+  #social {
+    text-align: left;
+  }
+
+  div.form-row {
+    width: 100%;
+  }
+  div#social div.mb-4 img.m-2 {
+    margin-top: 100px;
+  }
 }

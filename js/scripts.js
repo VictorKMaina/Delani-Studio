@@ -11,10 +11,10 @@ $().ready(function () {
     $("#product-1").toggle();
     $("#product-2").toggle();
   });
-  $(".col-lg-3").mouseenter(function () {
-    $(".portfolio-info").fadeTo("fast", 1)
+  $(".portfolio-info").mouseenter(function () {
+    $(this).fadeTo("fast", 1)
   })
-  $(".col-lg-3").mouseleave(function () {
-    $(".portfolio-info").fadeTo("fast", 0)
+  $(".portfolio-info").mouseleave(function () {
+    $(this).fadeTo("fast", 0)
   })
 })

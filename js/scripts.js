@@ -11,6 +11,8 @@ $().ready(function () {
     $("#product-1").toggle();
     $("#product-2").toggle();
   });
+});
+$().ready(function () {
   $(".portfolio-info").mouseenter(function () {
     $(this).fadeTo("fast", 1)
   })

@@ -22,10 +22,18 @@ $().ready(function () {
 })
 $().ready(function () {
   $("#contact form").submit(function (event) {
-    var userName = $("input#userName").val();
-    var userEmail = $("input#userEmail").val();
+    // event.preventDefault();
+    var userName = $("input#username").val();
+    var userEmail = $("input#email").val();
     var message = $("input#message").val();
-    alert("Hey, " + userName + ". We got your message. Thanks for reaching out to us.")
-    event.preventDefault()
+    // var url = "https://us4.api.mailchimp.com/3.0/lists/03ca874a3b/";
+    alert("Hey, " + userName + ". We got your message. Thanks for reaching out to us.");
+    $("#contact form").reset();
+    // $.post(url, { "username": "Victor", "email": "123@gmail.com", "apikey": "90c6212c5f012b1e27899206be68f22b-us4" }, function () {
+    //   alert("Thanks.")
+    // })
   })
 })
+
+// 90c6212c5f012b1e27899206be68f22b-us4 API Key
+// 03ca874a3b Audience ID

@@ -134,4 +134,7 @@ textarea::placeholder {
   div#social div.mb-4 img.m-2 {
     margin-top: 100px;
   }
+  div.col-md-4 {
+    margin-bottom: 30px;
+  }
 }

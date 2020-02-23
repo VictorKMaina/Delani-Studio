@@ -22,13 +22,14 @@ $().ready(function () {
 })
 $().ready(function () {
   $("#contact form").submit(function (event) {
-    // event.preventDefault();
     var userName = $("input#username").val();
     var userEmail = $("input#email").val();
     var message = $("input#message").val();
     // var url = "https://us4.api.mailchimp.com/3.0/lists/03ca874a3b/";
-    alert("Hey, " + userName + ". We got your message. Thanks for reaching out to us.");
-    $("#contact form").reset();
+    var check = swal({ title: "Hey, " + userName + ".", text: "We got your message. Thanks for reaching out to us." });
+    // event.preventDefault();
+    $("#contact form").trigger("reset");
+    return false;
     // $.post(url, { "username": "Victor", "email": "123@gmail.com", "apikey": "90c6212c5f012b1e27899206be68f22b-us4" }, function () {
     //   alert("Thanks.")
     // })

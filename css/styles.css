@@ -54,6 +54,7 @@ body {
 }
 
 .portfolio-img {
+  display: block;
   width: 100%;
 }
 
@@ -78,16 +79,23 @@ textarea::placeholder {
   color: white;
 }
 
-div.col-md-4, .col-lg-3 img {
+div.col-md-4{
+  position: relative;
   cursor: pointer;
 }
 
 .portfolio-info {
   position: absolute;
-  background-color: #c0171799;
-  width: 87.2%;
+  left: 0;
+  right: 0;
+  background-color: #ffffffcc;
+  margin: auto;
+  width: 92%;
   height: 100%;
-  display: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 768px) {

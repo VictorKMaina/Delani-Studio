@@ -37,6 +37,7 @@ This website was developed using:
 * Ubuntu 18.04
 * Git v2.17.1
 * GitHub
+* Sweet Alert JS
 
 ## Support and contact details
 If you would like to contact me, email me at [vk13runic@gmail.com](mailto:vk13runic@gmail.com "E-mail me"). The project is open-source, so feel free to edit it and use it as you wish. If you have any ideas on how to make it better, don't hesitate to reach out.

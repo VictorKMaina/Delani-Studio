@@ -24,7 +24,7 @@ $().ready(function () {
   $("#contact form").reset(function (event) {
     var userName = $("input#mce-MMERGE1").val();
     var userEmail = $("input#mce-EMAIL").val();
-    swal({ title: "Hey, " + userName + ".", text: "We got your message. Thanks for reaching out to us." });
+    alert("Hey, " + userName + "." + "We got your message. Thanks for reaching out to us.");
     // event.preventDefault();
     // return false;
   })

@@ -96,7 +96,10 @@ input,
 textarea {
   width: 100%;
   border-radius: 2px;
-  background-color: #ffffffef;
+  background-image: url("../assets/backgrounds/pattern.png");
+  background-size: 180px;
+  background-color: #f1f1f1;
+  background-blend-mode: screen;
   border: white solid 1px;
   color: black;
 }

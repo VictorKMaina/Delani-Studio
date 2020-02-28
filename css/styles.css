@@ -14,25 +14,51 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
+}
+
+.shadows {
+  text-shadow: 1px 1px 10px #00000099;
+}
+
+#about {
+  box-shadow: 1px 1px 20px;
+  width: 100%;
+  padding: 10%;
+  position: relative;
+}
+
+.pattern {
+  background-image: url("../assets/backgrounds/pattern.png");
+  background-size: 180px;
+  background-color: #ffffffdf;
+  background-blend-mode: screen;
+  position: relative;
 }
 
 #service {
   background-image: url("../assets/backgrounds/s_image.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: bottom;
   background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
 }
-
-/* #service div {
-  padding: 3rem;
-} */
 
 #contact {
   background-image: url(../assets/backgrounds/c_image.jpg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: bottom;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+#social {
+  background-image: url("../assets/backgrounds/pattern.png");
+  background-size: 180px;
+  background-color: #ffffffdd;
+  background-blend-mode: screen;
 }
 
 .container-fluid .jumbotron {
@@ -69,15 +95,16 @@ h3 {
 input,
 textarea {
   width: 100%;
-  background-color: #00000000;
+  border-radius: 2px;
+  background-color: #ffffffef;
   border: white solid 1px;
-  color: white;
+  color: black;
 }
 
-input::placeholder,
+/* input::placeholder,
 textarea::placeholder {
   color: white;
-}
+} */
 
 div.col-md-4{
   position: relative;
@@ -102,6 +129,11 @@ div.col-md-4{
   background-color: #00000000;
 }
 
+[type=reset], [type=submit] {
+  width: 120px;
+  margin-left: 20px;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     font-size: 16px;
@@ -118,30 +150,30 @@ div.col-md-4{
 
   .container-fluid .jumbotron {
     margin-top: 0;
-    padding-top: 70px;
+    padding-top: 50px;
   }
 
   [alt="mouse click"] {
     position: absolute;
-    bottom: 0px;
-    margin-bottom: 60px;
+    bottom: 40px;
   }
   [alt="logo"]{
     margin-bottom: 30px;
   }
   .jumbotron h1 {
-    font-size: 2.3em;
+    font-size: 2.2em;
     line-height: 50px;
     font-weight: bold;
   }
   .jumbotron p {
-    font-size: 1em;
+    font-size: 0.8em;
     line-height: 25px;
     font-weight: normal;
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
   }
-  #about, #service, #service div {
+  #service, #service div {
+    background-attachment: scroll;
     margin: auto;
     padding: 0;
   }
@@ -160,5 +192,18 @@ div.col-md-4{
   }
   div.col-md-4 {
     margin-bottom: 30px;
+  }
+  [type=reset], [type=submit] {
+  width: 60%;
+  margin: 0;
+}
+}
+
+
+
+@media only screen and (max-width: 320px){
+  [alt="mouse click"] {
+    position: absolute;
+    bottom: 100px;
   }
 }
